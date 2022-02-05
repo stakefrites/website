@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,700;1,900&family=Secular+One&display=swap");
+
+
+body {
+  /* 
+  background-color: black;
+  color: white;
+  */
+  font-family: "Exo 2", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
