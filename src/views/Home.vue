@@ -4,15 +4,17 @@
     <h3 class="validator-headline">We validate on these networks:</h3>
     <Validator v-for="node in nodes" :key="node.address" :node="node" />
   </div>
+  <Akash />
 </template>
 
 <script>
 import Validator from "@/components/Validator.vue";
 import Header from "@/components/Header.vue";
+import Akash from "@/components/Akash.vue";
 
 export default {
   name: "Home",
-  components: { Validator, Header },
+  components: { Validator, Header, Akash },
   props: {
     nodes: {
       type: Array,
@@ -27,6 +29,7 @@ export default {
 .validator-section {
   padding-top: 1em;
   color: white;
+  margin-bottom: 5em;
 }
 
 .validator-headline {
