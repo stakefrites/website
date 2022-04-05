@@ -1,9 +1,8 @@
-import { createApp } from 'vue'
-//import router from './router'
-import App from './App.vue'
+import { createApp } from "vue";
+//import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
+// Import Bootstrap an BootstrapVue CSS files (order is important)
+import App from "./App.vue";
 
-const app = createApp(App)
+const app = createApp(App);
 //app.use(router).mount('#app')
-app.mount('#app')
-
-
+app.mount("#app");
