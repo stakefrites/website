@@ -9,7 +9,7 @@ const nodes = [
   {
     name: "Lum Network",
     status: "active",
-    link: "https://ping.pub/LUM%20Network/staking/lumvaloper1kn7zgwex5yr897mp9vy83vm9re53skyhr82s58",
+    link: "https://ping.pub/lum-network/staking/lumvaloper1kn7zgwex5yr897mp9vy83vm9re53skyhr82s58",
     address: "lumvaloper1kn7zgwex5yr897mp9vy83vm9re53skyhr82s58",
   },
   {
@@ -27,11 +27,27 @@ const nodes = [
   {
     name: "Nomic",
     status: "active",
-    link: "https://ping.pub/nomic/staking/nomic1jndxttq5ykp5zc8g3xwnxmchzjtl7ap2avlwkz",
+    link: "https://nomic.zenscan.io/validator.php?addr=nomic1jndxttq5ykp5zc8g3xwnxmchzjtl7ap2avlwkz",
     address: "nomic1jndxttq5ykp5zc8g3xwnxmchzjtl7ap2avlwkz",
   },
-  { name: "Cerberus", status: "active", link: "", address: "" },
-  { name: "Evmos", status: "active", link: "", address: "" },
+  {
+    name: "Cerberus",
+    status: "active",
+    link: "https://www.mintscan.io/cerberus/validators/cerberusvaloper1zl4vt84hya03e8hu7dx4q4cvn2ts2xdrrnnufr",
+    address: "cerberusvaloper1zl4vt84hya03e8hu7dx4q4cvn2ts2xdrrnnufr",
+  },
+  {
+    name: "Sifchain",
+    status: "active",
+    link: "https://www.mintscan.io/sifchain/validators/sifvaloper1uepjmgfuk6rnd0djsglu88w7d0t49lmlmxj56z",
+    address: "sifvaloper1uepjmgfuk6rnd0djsglu88w7d0t49lmlmxj56z",
+  },
+  {
+    name: "Evmos",
+    status: "active",
+    link: "https://www.mintscan.io/evmos/validators/evmosvaloper1pz3mcahcrglf3md4lggax5r95gvmppc6x5w7hw",
+    address: "evmosvaloper1pz3mcahcrglf3md4lggax5r95gvmppc6x5w7hw",
+  },
 ];
 
 export default {
