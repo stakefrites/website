@@ -2,7 +2,7 @@
   <div class="main">
     <div class="text">
       <Logo />
-      <h2>PoS validators & web3 developpers.</h2>
+      <h1 class="logo-name">Stake Frites (🥩 , 🍟)</h1>
     </div>
   </div>
 </template>
@@ -25,16 +25,19 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: black;
+  color: white;
   align-items: stretch;
 }
+.logo-name {
+  margin-top: -10px;
+}
 .text {
-  color: black;
+  color: white;
   font-size: 2em;
   text-align: center;
 }
 
 .logo {
-  width: 75vw;
+  width: 100px;
 }
 </style>
