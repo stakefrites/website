@@ -25,6 +25,7 @@ export default {
   /* Scoped CSS here */
   display: flex;
   color: white;
+  margin-left: 0.25em;
 }
 
 .svg-icon:hover {

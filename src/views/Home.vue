@@ -1,9 +1,10 @@
 <template>
   <Header />
   <div class="validator-section">
-    <h3 class="validator-headline">We validate on these networks:</h3>
+    <h2>Networks we support</h2>
     <Validator v-for="node in nodes" :key="node.address" :node="node" />
   </div>
+
   <Akash />
 </template>
 
@@ -15,11 +16,13 @@ import Akash from "@/components/Akash.vue";
 export default {
   name: "Home",
   components: { Validator, Header, Akash },
-  props: {
-    nodes: {
-      type: Array,
-      default: () => [],
-    },
+  data() {
+    return {
+      nodes: [],
+    };
+  },
+  created() {
+    this.nodes = this.$store.state.node;
   },
 };
 </script>
@@ -33,7 +36,8 @@ export default {
 }
 
 .validator-headline {
-  font-size: 2em;
+  font-size: 1.5em;
+  text-align: left;
   text-align: center;
   color: white;
 }

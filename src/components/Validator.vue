@@ -1,22 +1,22 @@
 <template>
-  <div v-if="node.status != 'inactive'" class="parent">
-    <div class="validator-container">
-      <div class="row-in">
-        <div class="node-name">{{ node.name }}</div>
-        <a
-          class="node-link"
-          v-if="node.link != ''"
-          :href="node.link"
-          target="__blank__"
-        >
-          <ExternalLink />
-        </a>
-      </div>
-      <div :class="node.status">{{ node.status }}</div>
+  <div class="validator" v-if="node.status != 'inactive'">
+    <div class="val-name">
+      {{ node.name
+      }}<a
+        class="node-link"
+        v-if="node.link != ''"
+        :href="node.link"
+        target="__blank__"
+      >
+        <ExternalLink />
+      </a>
     </div>
+    <div class="val-status">
+      <p :class="node.status">{{ node.status }}</p>
+    </div>
+    <div class="val-price">USD${{ price }}</div>
+    <div class="val-vp">Voting Power: {{ vp }}</div>
   </div>
-  <div>USD$ {{ price }}</div>
-  <div>VP {{ vp }}</div>
 </template>
 
 <script>
@@ -121,34 +121,36 @@ a {
 h3 {
   font-size: 2em;
 }
-.row-in {
-  display: flex;
-  justify-content: space-between;
+
+.validator {
+  border-style: solid;
+  display: grid;
+  padding: 1em;
+  border-radius: 1em;
+  margin: 1em;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr auto auto;
 }
-.validator-container {
-  flex-grow: 1;
-  font-size: 1.5em;
+.val-name {
+  grid-column: 1;
+  font-size: 2.4em;
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
-  color: white;
 }
-.parent {
-  padding-top: 0.5em;
+.val-status {
+  grid-column: 2;
+  grid-row: 1/4;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
 }
-
-.node-name {
-  margin-right: 0.5em;
+.val-price {
+  grid-column: 1;
+  grid-row: 2;
 }
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  color: rgb(61, 212, 137);
-  text-decoration: underline;
+.val-vp {
+  grid-column: 1;
+  grid-row: 3;
 }
 
 .node-link {
