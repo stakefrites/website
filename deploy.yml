@@ -3,7 +3,7 @@ version: "2.0"
 
 services:
   node:
-    image: ghcr.io/stakefrites/website:v0.0.5
+    image: ghcr.io/stakefrites/website:v0.0.10
     expose:
       - port: 80
         accept:
